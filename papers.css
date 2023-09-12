@@ -1,189 +1,150 @@
 * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family:'Poppins',sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    min-height: 100vh;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 header {
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    padding: 20px 100px;
-    background:#162938;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: #162938;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
 }
 
-.logo{
-    font-size:28px;
-    color:white;
-    user-select:none;
+.logo {
+  font-size: 28px;
+  color: white;
+  user-select: none;
 }
 
-.navigation a{
-    position:relative;
-    font-size:1.1em;
-    color:white;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
 }
 
-.navigation a::after{
-    content: '';
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    width: 100%;
-    height: 3px;
-    background: #fff ;
-    border-radius:5px;
-    transform: scaleX(0);
-    transition:transform .5s;
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 0.5s;
 }
 
 .navigation a:hover::after {
-    transform:scaleX(1);
+  transform: scaleX(1);
 }
-
 
 .eduLevel a {
-    position:relative;
-    font-size:2em;
-    top:200px;
-    color:#162938;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-    align-items: center;
-    justify-content: center;
-     
+  position: relative;
+  font-size: 2em;
+  top: 200px;
+  color: #162938;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
-.eduLevel a::after{
-    content: '';
-    position:absolute;
-    bottom:-6px;
-    left:0;
-    width: 100%;
-    height: 3px;
-    background: #162938 ;
-    border-radius:5px;
-    transform: scaleX(0);
-    transition:transform .5s;
+.eduLevel a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #162938;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 0.5s;
 }
-
 
 .eduLevel a:hover::after {
-    transform:scaleX(1);
-} 
-
-.search-box{
-    position:relative;
-    flex-direction: row;
-    top:220px;
-    background:#2f3640;  
-    border-radius: 40px;
-    padding: 15px;
-    justify-content: center;
-    align-items: center;   
+  transform: scaleX(1);
 }
 
-.search-btn{
-    position:relative;
-    float:right;
-    bottom:-40px;
-    color: #d22828;
-    background:#2f3640;    
+.search-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 220px;
+  background: #2f3640;
+  border-radius: 40px;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.search-btn {
+  color: #d22828;
+  background: #2f3640;
+  border: none;
+  padding-right: 10px;
+}
 
 .search-txt {
-    border:none;
-    background:none;
-    outline:none;
-    font-size:16px;
-    color:white;
+  padding-left: 10px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
 }
 
-
 .papers-list {
-    text-align: center;
-    padding: 50px 0;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .papers {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .papers li {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .papers a {
-    display: block;
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    color: #333;
-    transition: background-color 0.3s;
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  color: #333;
+  transition: background-color 0.3s;
 }
 
 .papers a:hover {
-    transform:scaleX(1);
+  transform: scaleX(1);
 }
 
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #162938;
-    color: white;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #162938;
+  color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
